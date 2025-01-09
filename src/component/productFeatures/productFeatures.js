@@ -68,6 +68,7 @@ const ProductFeatures = () => {
           </div>
           <div className="lg:order-2 order-1 flex lg:items-end items-center lg:justify-end justify-center">
             <Image
+              alt="video"
               src={featureVideo}
               className="lg:w-[510px] w-[295px] lg:h-[500px] h-[295px]"
             />
