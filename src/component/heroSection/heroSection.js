@@ -1,5 +1,7 @@
 import React from "react";
 import heroBg from "../../../public/assets/images/heroBg.png";
+import heroBgmob from "../../../public/assets/images/heroBgmob.png";
+
 import CustomHeading from "../common/customHeading";
 import { CiMenuFries } from "react-icons/ci";
 const HeroSection = () => {
