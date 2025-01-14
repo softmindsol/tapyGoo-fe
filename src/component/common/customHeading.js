@@ -4,7 +4,7 @@ const CustomHeading = ({ headingText, fontSize, textColor, textAlign, fontWeight
   return (
     <h2
       className={`font-fontOutfit  ${fontSize ? fontSize : ""} ${
-        textColor ? textColor : ""
+        textColor ? textColor : "text-textHeading"
       } ${textAlign ? textAlign : ""} ${fontWeight ? fontWeight : ""}`}
     >
       {headingText}

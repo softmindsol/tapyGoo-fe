@@ -1,6 +1,7 @@
 import HeaderBar from "@/component/headerBar/headerBar";
 import HeroSection from "@/component/heroSection/heroSection";
 import HowWork from "@/component/howWorks/howWork";
+import PricingPlan from "@/component/pricingPlan/pricingPlan";
 import ProblemSolution from "@/component/problemSolution/ProblemSolution";
 import ProductFeatures from "@/component/productFeatures/productFeatures";
 import Benefits from "@/component/tangibleBenefits/benefits";
@@ -15,8 +16,9 @@ export default function Home() {
     <ProductFeatures />
     <ProblemSolution />
     <Benefits />
-    <HowWork />
     <Testimonial />
+    <HowWork />
+    <PricingPlan />
     
     </>
    

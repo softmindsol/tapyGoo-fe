@@ -59,7 +59,7 @@ const Testimonial = () => {
   const [selectedUser, setSelectedUser] = useState(testimonials[0]);
 
   return (
-    <div className="container mx-auto lg:py-14 py-6 lg:px-0 px-4">
+    <div className="container mx-auto lg:py-14 py-6 lg:px-0 px-4 bg-white">
       <CustomHeading
         headingText="Testimonials"
         textColor={"text-textHeading"}
