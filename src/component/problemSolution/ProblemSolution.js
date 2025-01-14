@@ -44,7 +44,7 @@ const ProblemSolution = () => {
   ];
   return (
     <>
-      <div className="container mx-auto py-10 lg:px-0 px-4">
+      <div className="container mx-auto py-10 lg:px-0 px-4 bg-white">
         <CustomHeading
           headingText="Problem & Solution"
           fontSize={"lg:text-[26px] text-lg"}

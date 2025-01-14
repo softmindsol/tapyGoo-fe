@@ -10,7 +10,7 @@ const Benefits = () => {
   ];
   return (
     <>
-      <div className="bg-customDarkGreen py-10">
+      <div className="bg-customDarkGreen py-10 ">
         <div className="container mx-auto grid lg:grid-cols-2 gap-3 lg:px-0 px-4">
           <div className="lg:order-1 order-2 2xl:pt-24 lg:pt-16 pt-10">
             <CustomHeading

@@ -74,6 +74,7 @@ const PricingPlan = () => {
                 </h2>
                 {item?.features.map((subitem, subindex) =>(
                     <div key={subindex} className="flex items-center gap-5">
+                        
                         </div>
                 ))}
               </div>

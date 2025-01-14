@@ -50,7 +50,7 @@ const HeroSection = () => {
             fontSize={"lg:text-[48px] text-[24px]"}
             headingText="Your Restaurant's Best Ally"
           />
-          <p className="lg:text-lg text-xs font-fontOutfit font-medium text-center">
+          <p className="lg:text-lg text-xs font-fontOutfit text-[#696969] font-medium text-center">
             With TapyGoo, connect your WhatsApp orders directly to your POS.
             Simple, <br></br>
             fast, and hassle-free.
