@@ -1,3 +1,4 @@
+import Faq from "@/component/faq/faq";
 import HeaderBar from "@/component/headerBar/headerBar";
 import HeroSection from "@/component/heroSection/heroSection";
 import HowWork from "@/component/howWorks/howWork";
@@ -19,6 +20,7 @@ export default function Home() {
     <Testimonial />
     <HowWork />
     <PricingPlan />
+    <Faq />
     
     </>
    

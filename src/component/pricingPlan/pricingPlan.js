@@ -1,6 +1,8 @@
 import React from "react";
 import CustomHeading from "../common/customHeading";
+import { FaCheck } from "react-icons/fa6";
 import pricing from "../../../public/assets/images/pricing.png";
+import { RxCross2 } from "react-icons/rx";
 import Image from "next/image";
 const PricingPlan = () => {
   const pricingPlan = [
@@ -8,34 +10,76 @@ const PricingPlan = () => {
       title: "Basic Plan",
       price: "$9.99",
       features: [
-        "Unlimited Users",
-        "50 GB Storage",
-        "24/7 Support",
-        "500 Emails/Month",
+        {
+          feature: "Access to Employers Hotline",
+        },
+        {
+          feature: "Medical Specialties",
+        },
+        {
+          feature: "Binding arbitration and class",
+        },
+        {
+          feature: "24/7 Customer Support",
+        },
+        {
+          feature: "Free equipment use",
+        },
+        {
+          feature: "Safety training topics",
+        },
       ],
-      btnText: "Start Free Trial",
+      btnText: "Start Now +",
     },
     {
       title: "Professional Plan",
       price: "$19.99",
       features: [
-        "Unlimited Users",
-        "100 GB Storage",
-        "24/7 Support",
-        "1000 Emails/Month",
+        {
+          feature: "Access to Employers Hotline",
+        },
+        {
+          feature: "Medical Specialties",
+        },
+        {
+          feature: "Binding arbitration and class",
+        },
+        {
+          feature: "24/7 Customer Support",
+        },
+        {
+          feature: "Free equipment use",
+        },
+        {
+          feature: "Safety training topics",
+        },
       ],
-      btnText: "Start My Plan",
+      btnText: "Start Now +",
     },
     {
       title: "Custom Plan",
       price: "$29.99",
       features: [
-        "Unlimited Users",
-        "200 GB Storage",
-        "24/7 Support",
-        "2000 Emails/Month",
+        {
+          feature: "Access to Employers Hotline",
+        },
+        {
+          feature: "Medical Specialties",
+        },
+        {
+          feature: "Binding arbitration and class",
+        },
+        {
+          feature: "24/7 Customer Support",
+        },
+        {
+          feature: "Free equipment use",
+        },
+        {
+          feature: "Safety training topics",
+        },
       ],
-      btnText: "Upgrade My Plan",
+      btnText: "Start Now +",
     },
   ];
 
@@ -67,19 +111,61 @@ const PricingPlan = () => {
                   <Image src={pricing} alt="pricing" />
                 </div>
               </div>
-              <div className="px-10 mt-8">
+              <div className="px-10 lg:mt-8 mt-5 border-b-2 pb-14 ">
                 <h2 className="text-[48px] font-fontOutfit font-semibold">
                   {item.price}
                   <span className="text-base text-[#696969]">/Monthly</span>
                 </h2>
-                {item?.features.map((subitem, subindex) =>(
-                    <div key={subindex} className="flex items-center gap-5">
-                        
-                        </div>
+                {item?.features.map((subitem, subindex) => (
+                  <div key={subindex} className="flex items-center gap-3 my-2">
+                    {subindex === 1 ? <RxCross2 color="red" /> : <FaCheck />}
+                    <p className="text-lg text-[#696969] font-fontOutfit font-medium">
+                      {subitem.feature}
+                    </p>
+                  </div>
                 ))}
+              </div>
+              <div className="flex items-center justify-center lg:my-10 py-5">
+                <button
+                  className={`text-white font-fontOutfit text-lg px-10 py-2 rounded-md font-medium ${
+                    index === 1 || index === 3
+                      ? "bg-customDarkGreen"
+                      : "bg-customOrange"
+                  }`}
+                >
+                  {item.btnText}
+                </button>
               </div>
             </div>
           ))}
+        </div>
+      </div>
+      <div className="bg-customBgGray py-16">
+        <CustomHeading
+          headingText="Ready to Transform Your Restaurant? "
+          fontSize={"lg:text-[32px] text-[22px]"}
+          textAlign={"text-center"}
+          fontWeight={"font-semibold"}
+        />
+        <CustomHeading
+          headingText="Try TapyGoo for Free "
+          fontSize={"lg:text-[32px] text-[22px]"}
+          textAlign={"text-center"}
+          fontWeight={"font-semibold"}
+        />
+        <div className="flex items-center justify-center gap-4 mt-4 lg:px-0 px-6">
+            <button
+              className={`text-white font-fontOutfit text-lg px-10 py-2 rounded-md font-medium bg-customDarkGreen`}
+            >
+              Try Now, No Commitment
+            </button>
+            <button
+              className={`text-white lg:block hidden font-fontOutfit text-lg px-10 py-2 rounded-md font-medium bg-customDarkGreen`}
+            >
+              Create Schedule
+            </button>
+            
+
         </div>
       </div>
     </>
