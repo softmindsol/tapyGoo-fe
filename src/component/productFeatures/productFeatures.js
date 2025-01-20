@@ -67,11 +67,17 @@ const ProductFeatures = () => {
             </div>
           </div>
           <div className="lg:order-2 order-1 flex lg:items-end items-center lg:justify-end justify-center">
-            <Image
-              alt="video"
-              src={featureVideo}
+          <video
               className="lg:w-[510px] w-[295px] lg:h-[500px] h-[295px]"
-            />
+              
+              autoPlay
+              muted
+              loop
+              poster="/assets/images/featureVideo.png"
+            >
+              <source src="/assets/images/featurevideo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>
