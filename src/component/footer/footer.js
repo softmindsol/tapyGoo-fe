@@ -80,7 +80,7 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Email..."
-                  className="outline-none placeholder:font-fontOutfit placeholder:text-white font-fontOutfit bg-transparent font-medium"
+                  className="outline-none placeholder:font-fontOutfit text-white placeholder:text-white font-fontOutfit bg-transparent font-medium"
                 />
                 <div className="bg-customOrange rounded-full p-2">
                   <FaArrowRightLong color="white" />
