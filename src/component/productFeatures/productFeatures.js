@@ -11,7 +11,7 @@ const ProductFeatures = () => {
   const feature = [
     {
       img: integration,
-      title: "East integration",
+      title: "Easy integration",
       description: "Compatible with major POS systems.",
     },
     {

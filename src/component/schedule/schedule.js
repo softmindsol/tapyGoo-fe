@@ -38,7 +38,7 @@ const Schedule = () => {
         </div>
 
         {/* Right Section */}
-        <div className="hidden lg:block">
+        <div className="block">
         <div
             className="calendly-inline-widget"
             data-url="https://calendly.com/apralize/discovery"
