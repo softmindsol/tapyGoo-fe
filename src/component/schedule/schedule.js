@@ -24,9 +24,9 @@ const Schedule = () => {
         {/* Left Section */}
         <div className="space-y-4">
           <div className="space-y-2">
-            <h2 className="font-fontOutfit font-semibold lg:text-[26px] text-lg text-textHeading">
+            {/* <h2 className="font-fontOutfit font-semibold lg:text-[26px] text-lg text-textHeading">
               Create Your Schedule
-            </h2>
+            </h2> */}
             <p className="font-fontOutfit font-medium text-[#696969] lg:text-lg text-xs">
               Effortlessly plan your work hours with Tapygoo's scheduling
               feature!
@@ -38,7 +38,9 @@ const Schedule = () => {
         </div>
 
         {/* Right Section */}
-        <div className="block">
+       
+      </div>
+      <div className="block mt-5">
         <div
             className="calendly-inline-widget"
             data-url="https://calendly.com/apralize/discovery"
@@ -50,7 +52,6 @@ const Schedule = () => {
           />
          
         </div>
-      </div>
     </div>
   );
 };
